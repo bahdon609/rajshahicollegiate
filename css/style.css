@@ -1,0 +1,352 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:focus {
+    outline: 0px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1;
+}
+
+.clr {
+    clear: both;
+}
+
+
+
+
+
+/* section head style */
+
+.section_head {}
+
+.section_head h5 {
+    color: #878787;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.section_head h2 {
+    color: #222222;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.section_head p {
+    color: #666666;
+    font-size: 14px;
+    padding: 0 25px;
+}
+
+
+
+/* End of common CSS */
+
+/*=========================
+
+    02.HEADER AREA CSS
+
+=========================*/
+
+.header_area .head .wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_area .head {
+    background: #006a4e;
+    padding: 10px 20px;
+}
+.header_area .head i{
+    font-size: 12px;
+    color: #fff;
+}
+.header_area .head span{
+    font-size: 15px;
+    padding-left: 5px;
+    color: #fff;
+}
+
+/*=========================
+
+    03.MENU/NAV AREA CSS
+
+=========================*/
+
+.main_menu {
+    background: #006a4e;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbarSupportedContent {
+    background: var(--themecolor);
+}
+
+.main_menu .navbar-nav .nav-item {
+    position: relative;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link {
+    position: relative;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    padding: 15px;
+    transition: all .5s linear;
+}
+.main_menu .navbar-nav .nav-item .submenu{
+    position: absolute;
+    left: 0;
+    top: 200%;
+    background: #006a4e;
+    width: 120px;
+    color: #fff;
+    line-height: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s linear;
+    z-index: 99;
+    padding-left: 0px;
+}
+.main_menu .navbar-nav .nav-item .submenu a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+.main_menu .navbar-nav .nav-item:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link::before {
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 50%;
+    width: 0px;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-50%);
+    transition: all .5s linear;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link:hover:before {
+    width: 100%;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link.nav_btn:before {
+    display: none;
+}
+
+/*=========================
+
+    04.Banner AREA CSS
+
+=========================*/
+
+.banner .banner_bg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .banner_bg .banner_overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 245, 245, 0.6);
+    padding: 30px 15px;
+}
+
+.banner .banner_bg .banner_overlay .wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner .banner_bg .banner_overlay .wrap .logo_img img{
+    width: 150px;
+}
+
+.banner .banner_bg .banner_overlay .wrap .title{
+    text-align: center;
+}
+.banner .banner_bg .banner_overlay .wrap .title h1{
+    color: #006a4e;
+}
+.banner .banner_bg .banner_overlay .wrap .title p{
+    color: #006a4e;
+    font-weight: 600;
+}
+.banner .banner_bg .banner_overlay .wrap .eiin_no p{
+    color: #006a4e;
+    font-weight: 500;
+}
+
+.news_area .news{
+    background: rgba(0, 106, 78, 0.15);
+}
+.news_area .news_title{
+    text-align: center;
+    color: #fff;
+    background: #006a4e !important;
+    padding: 10px 0;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+}
+.news_area .breaking-box span{
+    background: red;
+}
+
+.body_content .welcome_card .card{
+    border-color: #006a4e;
+}
+.body_content .map .card {
+    border-color: #006a4e;
+}
+.body_content .about_card .card .card-header{
+    background: #006a4e;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.body_content .about_card .card {
+    border-color: #006a4e;
+}
+.body_content .map .card .card-header{
+    background: #006a4e;
+    color: #fff;
+    font-size: 15x;
+    font-weight: 600;
+}
+.body_content .map .card .card-body{
+    padding: 10px !important;
+}
+.body_content .welcome_card .card .card-header{
+    background: #006a4e;
+    color: #fff;
+    font-size: 15x;
+    font-weight: 600;
+    /* text-align: center; */
+}
+.body_content .single_card .card {
+    border-color: #006a4e;
+}
+.body_content .single_card .card .card-header{
+    background: #006a4e;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+.body_content .single_card .card .card-body a{
+    color: #006a4e;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+.body_content .single_card .card .card-body .notice-list a{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    text-align: left;
+    font-weight: normal;
+    padding-top: 5px;
+}
+
+.body_content .single_card .card .card-body .notice-list a i{
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.footer-top{
+    background: #006a4e;
+    padding: 30px 0;
+}
+.footer-top a{
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+.footer-top i{
+    padding-right: 5px;
+}
+
+.footer-top .footer-title{
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    border: 1px solid #006d5b;
+    border-radius: 6px;
+    padding: 15px;
+    max-width: 350px;
+    margin: auto;
+  }
+  .profile-img {
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  .profile-name {
+    color: #006d5b;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .info-row {
+    border-top: 1px solid #e0e0e0;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+  .info-label {
+    font-weight: 600;
+    color: #006d5b;
+  }
+
